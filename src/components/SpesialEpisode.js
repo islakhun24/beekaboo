@@ -16,7 +16,7 @@ const SpesialEpisode = ()=>{
                 <h5 className="text-2xl mt-2">Only showing on the website</h5>
                 <div className="flex flex-row mt-8">
                 <div className="">
-                <ReactPlayer width={500} height={300} url='https://www.youtube.com/watch?v=ysz5S6PUM-U' />
+                <ReactPlayer width={500} height={300} url='https://www.youtube.com/watch?v=bWUgZm_AE64' />
                 </div>
                 <div style={{
                     width: 500,
