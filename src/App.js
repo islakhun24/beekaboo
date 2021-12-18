@@ -13,6 +13,10 @@ import LiquidSwipe from "./components/liquidswipe";
 import About from "./components/About";
 import Members from "./components/Members";
 import SpesialEpisode from "./components/SpesialEpisode";
+import Song from "./components/Song";
+import Blog from "./components/Blog";
+import Footer from "./components/Footer";
+import Shop from "./components/Shop";
 
 function App() {
   let components = [  <Slide1/>, <Slide2/>,]
@@ -56,6 +60,10 @@ useEffect(() => {
       <About/>
       <Members/>
       <SpesialEpisode/>
+      <Song/>
+      <Blog/>
+      <Shop/>
+      <Footer/>
     </div>
   );
 }
