@@ -261,5 +261,3 @@ export const LiquidSwipe = ({ components, colors }) => {
     </>
   );
 };
-
-export default LiquidSwipe

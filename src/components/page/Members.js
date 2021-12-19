@@ -1,8 +1,8 @@
 
-import honey from "../assets/images/svg/honey.svg";
-import person1 from '../assets/images/svg/person1.svg';
-import person2 from '../assets/images/svg/person2.svg';
-import person3 from '../assets/images/svg/person3.svg';
+import honey from "../../assets/images/svg/honey.svg";
+import person1 from '../../assets/images/svg/person1.svg';
+import person2 from '../../assets/images/svg/person2.svg';
+import person3 from '../../assets/images/svg/person3.svg';
 const Members = ()=>{
     return (
         <div style={{fontFamily:'Sniglet'}} className="items-center h-screen w-screen flex flex-col">

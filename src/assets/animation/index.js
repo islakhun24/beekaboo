@@ -1,0 +1,1 @@
+export { default as WaveSpesialEpisode } from './wave-spesial-episode.svg'

@@ -1,4 +1,4 @@
-import {ShopPng}from '../assets/images'
+import {ShopPng}from '../../assets/images'
 const Shop = () => {
     return <div className="px-16  gap-16 w-screen h-screen grid grid-cols-2 items-center justify-center" style={{
         backgroundColor: '#E5E5E5'

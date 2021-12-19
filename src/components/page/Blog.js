@@ -1,4 +1,4 @@
-import waveorange from '../assets/images/svg/waveorange.svg'
+import waveorange from '../../assets/images/svg/waveorange.svg'
 const Blog = () => {
     return (
         <div style={{ backgroundColor: '#BAB4E4'}} className="flex flex-col w-screen h-screen">

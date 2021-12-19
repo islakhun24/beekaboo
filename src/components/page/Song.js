@@ -1,6 +1,6 @@
-import waveyellow from './../assets/images/svg/waveyellow.svg';
+import waveyellow from '../../assets/images/svg/waveyellow.svg';
 import ReactAudioPlayer from 'react-audio-player';
-import album from './../assets/images/svg/album.svg';
+import album from '../../assets/images/svg/album.svg';
 const Song = (props) => {
         return (
             <div style={{ backgroundColor: '#BAB4E4'}} className="flex flex-col w-screen h-screen">

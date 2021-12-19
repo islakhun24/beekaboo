@@ -1,6 +1,6 @@
-import logo from '../assets/images/svg/logotext.svg'
-import send from '../assets/images/svg/sendicon.svg'
-import {IntagramIcon, YoutubeIcon, TiktokIcon} from '../assets/images'
+import logo from '../../assets/images/svg/logotext.svg'
+import send from '../../assets/images/svg/sendicon.svg'
+import {IntagramIcon, YoutubeIcon, TiktokIcon} from '../../assets/images'
 
 const Footer = ()=>{
         return <div style={{backgroundColor: '#FFE15A'}} className="flex flex-col w-screen px-16 pb-8 pt-24">

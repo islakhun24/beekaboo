@@ -1,5 +1,5 @@
 
-import honey from "../assets/images/svg/honey.svg";
+import honey from "../../assets/images/svg/honey.svg";
 const About = ()=>{
     return (
         <div className="h-screen w-screen flex flex-row">

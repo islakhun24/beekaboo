@@ -1,0 +1,1 @@
+import ReactCSSTransitionGroup from 'react-transition-group'; // ES6
