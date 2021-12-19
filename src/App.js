@@ -45,6 +45,7 @@ useEffect(() => {
   };
 }, [handleNavigation]);
 
+
   return (
     <div
       style={{ background: "#90CAF9" }}
@@ -52,10 +53,62 @@ useEffect(() => {
     >
       <Header scrollPos={y}/>
       <div className="h-screen w-screen">
-      <div className="absolute w-full h-full -mr-4 left-0 -right-2 bg-orange"  />
+      <div className="  w-full h-full -mr-4 left-0 -right-2"  />
+      <div className="absolute top-0 cont flex space-x-8">
+      <div className="drip"></div>
+      <div className="drip"></div>
+      <div className="drip"></div>
+      <div className="drip"></div>
+      <div className="drip"></div>
+      <div className="drip"></div>
+      <div className="drip"></div>
+      <div className="drip"></div>
+      <div className="drip"></div>
+      <div className="drip"></div>
+      <div className="drip"></div>
+      <div className="drip"></div>
+      <div className="drip"></div>
+      <div className="drip"></div>
+      <div className="drip"></div>
+      <div className="drip"></div>
+      <div className="drip"></div>
+      <div className="drip"></div>
+      <div className="drip"></div>
+      <div className="drip"></div>
+     <div className="drip"></div>
+       <div className="drip"></div>
+      <div className="drip"></div>
+     <div className="drip"></div>
+      <div className="drip"></div>
+      <div className="drip"></div>
+       {/* <div className="drip"></div>
+      <div className="drip"></div>
+      <div className="drip"></div>
+      <div className="drip"></div>
+      <div className="drip"></div>
+      <div className="drip"></div>
+      <div className="drip"></div>
+      <div className="drip"></div>
+      <div className="drip"></div>
+      <div className="drip"></div>
+      <div className="drip"></div>
+      <div className="drip"></div>
+      <div className="drip"></div>
+      <div className="drip"></div> */}
+      </div>
+      
+
+      <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+        <defs>
+          <filter id="goo">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+            <feBlend in="SourceGraphic" in2="goo" />
+          </filter>
+        </defs>
+      </svg>
         <Slide1/>
       </div>
-      <Slide1/>
       <About/>
       <Members/>
       <SpesialEpisode/>

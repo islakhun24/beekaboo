@@ -1,0 +1,94 @@
+.cont .drip:nth-child(2){
+    height:30px;
+    width:30px;
+    border-radius: 50%;
+    background:#f2805f;
+    position:absolute;
+    top:-100%;
+    animation:falling 5s linear infinite;
+  }
+  
+
+  .cont .drip:nth-child(2){
+    height:40px;
+    width: 40px;
+    border-radius: 50%;
+    background:#f2805f;
+    position:absolute;
+    top:-100%;
+    animation:falling4 5s linear infinite;
+  }
+  
+  .cont .drip:nth-child(4){
+    height:40px;
+    width: 40px;
+    border-radius: 50%;
+    background:#f2805f;
+    position:absolute;
+    top:-100%;
+    left: 10%;
+    animation:falling5 5s linear infinite;
+  }
+  .cont .drip:nth-child(20){
+    height:40px;
+    width: 40px;
+    border-radius: 50%;
+    background:#f2805f;
+    position:absolute;
+    top:-100%;
+    left: 60%;
+    animation:falling5 5s linear infinite;
+  }
+
+  .cont .drip:nth-child(21){
+    height:40px;
+    width: 40px;
+    border-radius: 50%;
+    background:#f2805f;
+    position:absolute;
+    top:-100%;
+    left: 61%;
+    animation:falling5 5s linear infinite;
+  }
+
+  .cont .drip:nth-child(22){
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background:#f2805f;
+    position:absolute;
+    top:-100%;
+    left: 90%;
+    animation:falling5 5s linear infinite;
+  }
+
+  .cont .drip:nth-child(23){
+    height: 40px;
+    width: 80px;
+    border-radius: 50%;
+    background:#f2805f;
+    position:absolute;
+    top:-100%;
+    left: 40%;
+    animation:falling5 5s linear infinite;
+  }
+  .cont .drip:nth-child(24){
+    height: 40px;
+    width: 80px;
+    border-radius: 50%;
+    background:#f2805f;
+    position:absolute;
+    top:-100%;
+    left: 30%;
+    animation:falling5 5s linear infinite;
+  }
+  .cont .drip:nth-child(25){
+    height: 40px;
+    width: 80px;
+    border-radius: 50%;
+    background:#f2805f;
+    position:absolute;
+    top:-100%;
+    left: 70%;
+    animation:falling5 5s linear infinite;
+  }

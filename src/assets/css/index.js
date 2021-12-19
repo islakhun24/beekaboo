@@ -1,3 +1,5 @@
 import './home.css'
 import './sparator-spesial-episode-top.css'
-import './animation.css'
+import './drip/animation.css'
+import './drip/drip.css'
+import './drip/connect.css'
