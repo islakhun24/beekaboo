@@ -3,7 +3,7 @@ import Slide2 from "./components/slide2";
 import Slide1 from "./components/slide1";
 import Slide3 from "./components/slide3";
 import "./App.css";
-import { useCallback, useEffect, useState } from "react";
+import { createRef, useCallback, useEffect, useRef, useState } from "react";
 import randomColor from "randomcolor";
 import Header from "./components/page/Header";
 import {LiquidSwipe} from "./components/liquidswipe";
@@ -25,13 +25,30 @@ function App() {
     var backgroundColors = ['#fff000', '#444fff']
   const [y, setY] = useState(window.scrollY);
 
+  const headerRef = useRef(null)
+  const aboutRef = useRef(null)
+  const memberRef = useRef(null)
+  const spesialEpisodeRef = useRef(null)
+  const songRef = useRef(null)
+  const blogRef = useRef(null)
+  const shopRef = useRef(null)
+  const footerRef = useRef(null)
+
+  const [headerRefValue, setheaderRefValue] = useState(0);
+  const [aboutRefValue, setaboutRefValue] = useState(0);
+  const [memberRefValue, setmemberRefValue] = useState(0);
+  const [spesialEpisodeRefValue, setspesialEpisodeRefValue] = useState(0);
+  const [songRefValue, setsongRefValue] = useState(0);
+  const [blogRefValue, setblogRefValue] = useState(0);
+  const [shopRefValue, setshopRefValue] = useState(0);
+  const [footerRefValue, setfooterRefValue] = useState(0);
 const handleNavigation = useCallback(
   e => {
     const window = e.currentTarget;
     if (y > window.scrollY) {
-      console.log("scrolling up");
+      // console.log("scrolling up");
     } else if (y < window.scrollY) {
-      console.log("scrolling down");
+      // console.log("scrolling down");
     }
     setY(window.scrollY);
   }, [y]
@@ -45,13 +62,33 @@ useEffect(() => {
   };
 }, [handleNavigation]);
 
+useEffect(()=>{
+  setheaderRefValue(headerRef.current.offsetTop)
+  setaboutRefValue(aboutRef.current.offsetTop)
+  setmemberRefValue(memberRef.current.offsetTop)
+  setspesialEpisodeRefValue(spesialEpisodeRef.current.offsetTop)
+  setsongRefValue(songRef.current.offsetTop)
+  setblogRefValue(blogRef.current.offsetTop)
+  setshopRefValue(shopRef.current.offsetTop)
+  setfooterRefValue(footerRef.current.offsetTop)
+  
+}, [])
 
   return (
     <div
       style={{ background: "#90CAF9" }}
       className="flex justify-center items-start flex-col overflow-hidden "
     >
-      <Header scrollPos={y}/>
+      <div ref={headerRef} >
+      <Header headerRef={parseInt(headerRefValue)}
+              aboutRef={parseInt(aboutRefValue)}
+              memberRef={parseInt(memberRefValue)}
+              spesialEpisodeRef={parseInt(spesialEpisodeRefValue)}
+              songRef={parseInt(songRefValue)}
+              blogRef={parseInt(blogRefValue)}
+              shopRef={parseInt(shopRefValue)}
+              footerRef={parseInt(footerRefValue)}
+              scrollPos={y}/>
       <div className="h-screen w-screen overflow-hidden">
       <div className="  w-full h-full -mr-4 left-0 -right-2"  />
       <div className="absolute top-0 cont flex space-x-8">
@@ -96,6 +133,7 @@ useEffect(() => {
       <div className="drip"></div>
       <div className="drip"></div> */}
       </div>
+      </div>
       
 
       <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
@@ -109,13 +147,28 @@ useEffect(() => {
       </svg>
         <Slide1/>
       </div>
-      <About/>
-      <Members/>
-      <SpesialEpisode/>
-      <Song/>
-      <Blog/>
-      <Shop/>
-      <Footer/>
+     <div  ref={aboutRef}>
+      <About scrollPos={y} aboutRef={parseInt(aboutRefValue)}/>
+     </div>
+      <div ref={memberRef}>
+        <Members/>
+      </div>
+      <div ref={spesialEpisodeRef}>
+        <SpesialEpisode/>
+      </div>
+      <div ref={songRef}>
+        <Song/>
+      </div>
+      <div ref={blogRef}>
+        <Blog/>
+      </div>
+      <div ref={shopRef}>
+        <Shop/>
+      </div>
+      <div ref={footerRef}>
+        <Footer/>
+      </div>
+      
     </div>
   );
 }
