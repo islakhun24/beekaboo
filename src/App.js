@@ -52,7 +52,7 @@ useEffect(() => {
       className="flex justify-center items-start flex-col overflow-hidden "
     >
       <Header scrollPos={y}/>
-      <div className="h-screen w-screen">
+      <div className="h-screen w-screen overflow-hidden">
       <div className="  w-full h-full -mr-4 left-0 -right-2"  />
       <div className="absolute top-0 cont flex space-x-8">
       <div className="drip"></div>

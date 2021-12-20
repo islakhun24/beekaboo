@@ -1,16 +1,12 @@
 
 import '../../assets/css/special-episode.css'
-// import {WaveSpesialEpisode} from '../../assets/animation'
+import bgspesialepisode from '../../assets/images/svg/bgspesialepisode.svg'
 import ReactPlayer from 'react-player'
-
-import { Player } from 'video-react';
 
 const SpesialEpisode = ()=>{
     return (
-        <div style={{fontFamily: 'Sniglet'}} class="flex flex-col h-screen w-screen">
-            <div className="wave-container">
-                {/* <WaveSpesialEpisode/> */}
-            </div>
+        <div style={{fontFamily: 'Sniglet'}} class="flex  flex-col h-screen w-screen">
+            <img src={bgspesialepisode} className="-mt-16" alt="" />
             <div style={{backgroundColor:'#BAB4E4'}}  className="flex p-8 flex-col h-screen w-screen items-center">
                 <h3 className="text-6xl font-normal">Special Episode</h3>
                 <h5 className="text-2xl mt-2">Only showing on the website</h5>
