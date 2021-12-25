@@ -24,7 +24,7 @@ function App() {
   var componentsToRender = [  <Slide1/>, <Slide2/>,]// Add components you want to render.
     var backgroundColors = ['#fff000', '#444fff']
   const [y, setY] = useState(window.scrollY);
-
+  const [isMobile, setIsMobile] = useState(false)
   const headerRef = useRef(null)
   const aboutRef = useRef(null)
   const memberRef = useRef(null)
@@ -53,6 +53,13 @@ const handleNavigation = useCallback(
     setY(window.scrollY);
   }, [y]
 );
+const handleResize = () => {
+    if (window.innerWidth < 720) {
+        setIsMobile(true)
+    } else {
+        setIsMobile(false)
+    }
+  }
 
 useEffect(() => {
   setY(window.scrollY);
@@ -71,6 +78,7 @@ useEffect(()=>{
   setblogRefValue(blogRef.current.offsetTop)
   setshopRefValue(shopRef.current.offsetTop)
   setfooterRefValue(footerRef.current.offsetTop)
+  window.addEventListener("resize", handleResize)
   
 }, [])
 
@@ -80,7 +88,7 @@ useEffect(()=>{
       className="flex justify-center items-start flex-col overflow-hidden "
     >
       <div ref={headerRef} >
-      <Header headerRef={parseInt(headerRefValue)}
+      <Header isMobile={isMobile} headerRef={parseInt(headerRefValue)}
               aboutRef={parseInt(aboutRefValue)}
               memberRef={parseInt(memberRefValue)}
               spesialEpisodeRef={parseInt(spesialEpisodeRefValue)}
@@ -148,13 +156,13 @@ useEffect(()=>{
         <Slide1/>
       </div>
      <div  ref={aboutRef}>
-      <About scrollPos={y} aboutRef={parseInt(aboutRefValue)}/>
+      <About isMobile={isMobile} scrollPos={y} aboutRef={parseInt(aboutRefValue)}/>
      </div>
       <div ref={memberRef}>
         <Members/>
       </div>
       <div ref={spesialEpisodeRef}>
-        <SpesialEpisode/>
+        <SpesialEpisode isMobile={isMobile}/>
       </div>
       <div ref={songRef}>
         <Song/>

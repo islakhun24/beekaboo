@@ -1,16 +1,14 @@
 import waveorange from '../../assets/images/svg/waveorange.svg'
 const Blog = () => {
     return (
-        <div style={{ backgroundColor: '#BAB4E4'}} className="flex flex-col w-screen h-screen">
-            <div className="w-screen h-96 -mt-16" style={{
-                backgroundImage: `url(${waveorange})`,
-                backgroundRepeat: 'none',
-                backgroundColor:'#FFE15A',
-                backgroundPositionY: '-96px',
-                objectFit: 'cover',
-                backgroundSize: '100%'
-            }}></div>
-            <div className="w-screen h-screen text-white flex flex-col items-center" style={{
+        <div style={{ backgroundColor: '#BAB4E4'}} className="flex flex-col w-screen">
+            <div style={{
+                backgroundColor: '#FFE15A'
+            }
+            }>
+                <img src={waveorange} alt="" srcset="" />
+            </div>
+            <div className="w-screen h-screen text-white py-8 flex flex-col items-center" style={{
                 backgroundColor: '#FF9A00',
                 fontFamily: 'Sniglet'
             }}>

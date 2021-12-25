@@ -1,0 +1,40 @@
+.container {
+    @apply
+    flex flex-col
+    lg:grid lg:grid-cols-2 lg:gap-4
+    lg:p-8
+    xl:p-12
+    2xl:p-16
+    md:p-2
+    w-screen
+    h-full
+    p-4
+}
+
+.container2{
+    @apply flex-col flex space-y-4 object-contain
+}
+
+.logo{
+    @apply w-32 h-12
+}
+
+.container-logo{
+
+}
+
+.container-shop{
+    @apply col-span-1 flex flex-col
+}
+
+.container-newsletter{
+   @apply col-span-1 flex flex-col
+}
+.container-subscribe{
+    @apply flex mt-2 flex-row px-2 border py-1 rounded-md border-black
+}
+
+.labe{
+    @apply  text-lg font-bold  
+}
+
