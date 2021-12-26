@@ -67,7 +67,7 @@ const Header = (props)=>{
     return (
      <div>
       {
-      !isMobile ?  (<header style={scrollPos > 20 ? {backgroundColor: '#FFF'}: {}} className="  fixed top-0 left-0 w-full">
+      !isMobile ?  (<header style={scrollPos > 20 ? {backgroundColor: '#FFF'}: {}} className=" z-50 fixed top-0 left-0 w-full">
       <div style={{
         height: '56px'
       }} className="flex flex-row space-x-8 px-16">

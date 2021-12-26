@@ -3,10 +3,9 @@ import Slide2 from "./components/slide2";
 import Slide1 from "./components/slide1";
 import Slide3 from "./components/slide3";
 import "./App.css";
-import { createRef, useCallback, useEffect, useRef, useState } from "react";
-import randomColor from "randomcolor";
+import {  useCallback, useEffect, useRef, useState } from "react";
 import Header from "./components/page/Header";
-import {LiquidSwipe} from "./components/liquidswipe";
+import {LiquidSwipe} from "./components/fluid/liquid-swipe";
 import About from "./components/page/About";
 import Members from "./components/page/Members";
 import SpesialEpisode from "./components/page/SpesialEpisode";
@@ -14,15 +13,11 @@ import Song from "./components/page/Song";
 import Blog from "./components/page/Blog";
 import Footer from "./components/page/Footer";
 import Shop from "./components/page/Shop";
-import Home from "./components/page/Home";
-import Corousel from "./components/corousel/Corousel";
-import bgorange from "./assets/images/svg/bgorange.svg";
 
 
 function App() {
-  let components = [  <Slide1/>, <Slide2/>,]
-  var componentsToRender = [  <Slide1/>, <Slide2/>,]// Add components you want to render.
-    var backgroundColors = ['#fff000', '#444fff']
+  var componentsToRender = [ <Slide1/>, <Slide2/>, <Slide3/>,]// Add components you want to render.
+    var backgroundColors = ['#90CAF9', '#FFD101', '#90CAF9']
   const [y, setY] = useState(window.scrollY);
   const [isMobile, setIsMobile] = useState(false)
   const headerRef = useRef(null)
@@ -98,7 +93,7 @@ useEffect(()=>{
               footerRef={parseInt(footerRefValue)}
               scrollPos={y}/>
       <div className="h-screen w-screen overflow-hidden">
-      <div className="  w-full h-full -mr-4 left-0 -right-2"  />
+      {/* <div className="  w-full h-full -mr-4 left-0 -right-2"  />
       <div className="absolute top-0 cont flex space-x-8">
       <div className="drip"></div>
       <div className="drip"></div>
@@ -139,8 +134,9 @@ useEffect(()=>{
       <div className="drip"></div>
       <div className="drip"></div>
       <div className="drip"></div>
-      <div className="drip"></div> */}
-      </div>
+      <div className="drip"></div> 
+      </div> */}
+        <LiquidSwipe components={componentsToRender} colors={backgroundColors} />
       </div>
       
 
@@ -153,7 +149,8 @@ useEffect(()=>{
           </filter>
         </defs>
       </svg>
-        <Slide1/>
+        {/* <Slide1/> */}
+      
       </div>
      <div  ref={aboutRef}>
       <About isMobile={isMobile} scrollPos={y} aboutRef={parseInt(aboutRefValue)}/>
