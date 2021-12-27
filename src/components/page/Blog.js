@@ -8,13 +8,13 @@ const Blog = () => {
             }>
                 <img src={waveorange} alt="" srcset="" />
             </div>
-            <div className="w-screen h-screen text-white py-8 flex flex-col items-center" style={{
+           <div className="w-screen text-white py-8 flex flex-col items-center" style={{
                 backgroundColor: '#FF9A00',
                 fontFamily: 'Sniglet'
             }}>
                 <h3  className="text-6xl text-shadow-md font-normal">Blog</h3>
                 <h5 className="text-2xl mt-4 text-shadow-md font-normal">Last update</h5>
-                <div className="mt-16 items-center justify-center flex flex-row space-x-4 overflow-x-auto">
+                <div className="mt-16 overflow-x-visible mx-4 items-center justify-center flex flex-row space-x-4">
                     <div style={{
                         width: '237px',
                         height: '300px',

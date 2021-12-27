@@ -2,7 +2,7 @@
 import '../../assets/css/special-episode.css'
 import bgspesialepisode from '../../assets/images/svg/bgspesialepisode.svg'
 import ReactPlayer from 'react-player'
-
+import './SpesialEpisode.css'
 const SpesialEpisode = (props)=>{
     const {isMobile} = props
     return (
@@ -12,6 +12,7 @@ const SpesialEpisode = (props)=>{
             }>
                 <img src={bgspesialepisode} alt="" srcset="" />
             </div>
+           
             <div style={{backgroundColor:'#BAB4E4'}}  className="flex p-8 flex-col w-screen items-center">
                 <h3 className="text-6xl font-normal text-center">Special Episode</h3>
                 <h5 className="text-2xl mt-2 text-center">Only showing on the website</h5>
